@@ -24,6 +24,11 @@ switch_dict = {
     'mul': cus_mul,
     'div': cus_div
 }
+
+#충돌유도지역 - 1
+def collision():
+    return 1
+
 #입력된 연산자를 통해 맵핑된 함수 탐색
 def detect_case(value, x, y):
     return switch_dict.get(value, cus_except)(x, y)
